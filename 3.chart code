@@ -14,7 +14,7 @@
         ]);
 
         var options = {
-          title: 'Sectoral distribution of employment (%), February 2021',
+          title: 'Sectoral distribution of seasonally adjusted employment (%), February 2021',
           pieHole: 0.4,
         };
 
