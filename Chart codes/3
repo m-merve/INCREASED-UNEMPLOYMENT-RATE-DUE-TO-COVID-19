@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Sector', 'Percentage'],
+          ['Agriculture',  17.4],
+          ['Industry',  20.8],
+          ['Build',  6],
+          ['Service', 55.8],
+        ]);
+
+        var options = {
+          title: 'Sectoral distribution of seasonally adjusted employment (%), February 2021',
+          pieHole: 0.4,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="donutchart" style="width: 1200px; height: 600px;"></div>
+  </body>
+</html>
